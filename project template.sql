@@ -27,7 +27,7 @@ CREATE TABLE IF NOT EXISTS Pharmacy (
 );
 
 -- Create the table if it does not alread exist
-CREATE TABLE IF NOT EXISTS Hosptial (
+CREATE TABLE IF NOT EXISTS Hospital (
 	HospitalID int PRIMARY KEY,
     HospitalName varchar(50) NOT NULL,
     HospitalAddress varchar(50),
@@ -101,7 +101,7 @@ CREATE TABLE IF NOT EXISTS Invoice (
 
 -- Add the Foreign key contraints to each of the foreign key references
 ALTER TABLE Patient ADD CONSTRAINT FOREIGN KEY (PharmacyID)  REFERENCES Pharmacy(PharmacyID);
-ALTER TABLE Department ADD CONSTRAINT FOREIGN KEY (HospitalID)  REFERENCES Hosptial(HospitalID);
+ALTER TABLE Department ADD CONSTRAINT FOREIGN KEY (HospitalID)  REFERENCES Hospital(HospitalID);
 ALTER TABLE Staff ADD CONSTRAINT FOREIGN KEY (DepartmentID)  REFERENCES Department(DepartmentID);
 ALTER TABLE Room ADD CONSTRAINT FOREIGN KEY (PatientID)  REFERENCES Patient(PatientID);
 ALTER TABLE Room ADD CONSTRAINT FOREIGN KEY (StaffID)  REFERENCES Staff(StaffID);
