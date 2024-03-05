@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS Patient (
     LastName varchar(50) not null,
     Address varchar(255),
     ssn char(9),
-    PhoneNumber int,
+    PhoneNumber char(10),
 	insurance bool,
     PharmacyID int,
     Admitted datetime,
@@ -23,7 +23,7 @@ CREATE TABLE IF NOT EXISTS Pharmacy (
 	PharmacyID int PRIMARY KEY,
 	PharmacyName varchar(50) NOT NULL,
 	PharmacyAddress varchar(50),
-	PharmacyPhoneNumber int
+	PharmacyPhoneNumber char(10)
 );
 
 -- Create the table if it does not alread exist
@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS Hospital (
 	HospitalID int PRIMARY KEY,
     HospitalName varchar(50) NOT NULL,
     HospitalAddress varchar(50),
-    HospitalPhoneNumber int,
+    HospitalPhoneNumber char(10),
     State varchar(2),
     ZipCode varchar(5)
 );
@@ -51,7 +51,7 @@ CREATE TABLE IF NOT EXISTS Staff (
     ssn char(9),
     Address varchar(255),
     DepartmentID int NOT NULL,
-    PhoneNumber int
+    PhoneNumber char(10)
 );
 
 -- Create the table if it does not alread exist
@@ -78,7 +78,7 @@ CREATE TABLE IF NOT EXISTS Doctor (
     LastName varchar(50) NOT NULL,
     ssn char(9),
     DepartmentID int NOT NULL,
-    PhoneNumber int
+    PhoneNumber char(10)
 );
 
 -- Create the table if it does not alread exist
