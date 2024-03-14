@@ -5,6 +5,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $FirstName = htmlspecialchars($_POST["FirstName"]);
     $LastName = htmlspecialchars($_POST["LastName"]);
     $age = intval($_POST["age"]);
+    $Address = htmlspecialchars($_POST["Address"]);
+    $ssn = htmlspecialchars($_POST["ssn"]);
+    $PhoneNumber = htmlspecialchars($_POST["PhoneNumber"]);
+    $insurance = isset($_POST["insurance"]); 
+
    
 
     // Validate the input data further if needed
@@ -23,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     // Update the Patient table with the submitted data
-    $sql = "INSERT INTO Patient (FirstName, LastName, age) VALUES ('$FirstName', '$LastName', '$age')";
+    $sql = "INSERT INTO Patient (FirstName, LastName, age, address, ssn, PhoneNumber, insurance) VALUES ('$FirstName', '$LastName', '$age', '$Address', '$ssn', '$PhoneNumber', '$insurance')";
 
     if ($conn->query($sql) === TRUE) {
         echo "Patient record added successfully";
