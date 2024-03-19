@@ -6,7 +6,7 @@ USE HealthCare;
 
 -- Create the table if it does not alread exist
 CREATE TABLE IF NOT EXISTS Patient (
-	PatientID int PRIMARY KEY,
+	PatientID int PRIMARY KEY AUTO_INCREMENT,
     FirstName varchar(50) not null,
     LastName varchar(50) not null,
     Address varchar(255),
@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS Patient (
 
 -- Create the table if it does not alread exist
 CREATE TABLE IF NOT EXISTS Pharmacy (
-	PharmacyID int PRIMARY KEY,
+	PharmacyID int PRIMARY KEY AUTO_INCREMENT,
 	PharmacyName varchar(50) NOT NULL,
 	PharmacyAddress varchar(50),
 	PharmacyPhoneNumber char(10)
@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS Pharmacy (
 
 -- Create the table if it does not alread exist
 CREATE TABLE IF NOT EXISTS Hospital (
-	HospitalID int PRIMARY KEY,
+	HospitalID int PRIMARY KEY AUTO_INCREMENT,
     HospitalName varchar(50) NOT NULL,
     HospitalAddress varchar(50),
     HospitalPhoneNumber char(10),
@@ -38,14 +38,14 @@ CREATE TABLE IF NOT EXISTS Hospital (
 
 -- Create the table if it does not alread exist
 CREATE TABLE IF NOT EXISTS Department (
-	DepartmentID int PRIMARY KEY,
+	DepartmentID int PRIMARY KEY AUTO_INCREMENT,
     HospitalID int NOT NULL,
     DepartmentName varchar(50) NOT NULL
 );
 
 -- Create the table if it does not alread exist
 CREATE TABLE IF NOT EXISTS Staff (
-	StaffID int PRIMARY KEY,
+	StaffID int PRIMARY KEY AUTO_INCREMENT,
     FirstName varchar(50) NOT NULL,
     LastName varchar(50) NOT NULL,
     ssn char(9),
@@ -56,7 +56,7 @@ CREATE TABLE IF NOT EXISTS Staff (
 
 -- Create the table if it does not alread exist
 CREATE TABLE IF NOT EXISTS Room (
-	RoomID int PRIMARY KEY,
+	RoomID int PRIMARY KEY AUTO_INCREMENT,
     PatientID int,
     StaffID int,
     AdmissionDate date
@@ -64,7 +64,7 @@ CREATE TABLE IF NOT EXISTS Room (
 
 -- Create the table if it does not alread exist
 CREATE TABLE IF NOT EXISTS Prescription (
-	PrescriptionID int PRIMARY KEY,
+	PrescriptionID int PRIMARY KEY AUTO_INCREMENT,
     MedicationName varchar(100) NOT NULL,
     PrescriptionDate datetime,
     PatientID int NOT NULL,
@@ -73,7 +73,7 @@ CREATE TABLE IF NOT EXISTS Prescription (
 
 -- Create the table if it does not alread exist
 CREATE TABLE IF NOT EXISTS Doctor (
-	DoctorID int PRIMARY KEY,
+	DoctorID int PRIMARY KEY AUTO_INCREMENT,
     FirstName varchar(50) NOT NULL,
     LastName varchar(50) NOT NULL,
     ssn char(9),
@@ -83,7 +83,7 @@ CREATE TABLE IF NOT EXISTS Doctor (
 
 -- Create the table if it does not alread exist
 CREATE TABLE IF NOT EXISTS Appointment (
-	AppointmentID int PRIMARY KEY,
+	AppointmentID int PRIMARY KEY AUTO_INCREMENT,
     PatientID int NOT NULL,
     DoctorID int NOT NULL, 
     Date date NOT NULL,
@@ -92,11 +92,11 @@ CREATE TABLE IF NOT EXISTS Appointment (
 
 -- Create the table if it does not alread exist
 CREATE TABLE IF NOT EXISTS Invoice (
-	InvoiceID int PRIMARY KEY,
+	InvoiceID int PRIMARY KEY AUTO_INCREMENT,
     PatientID int NOT NULL,
     ServiceDescription varchar(255) NOT NULL,
     Cost decimal NOT NULL,
-    total decimal NOT NULL
+    Total decimal NOT NULL
 );
 
 -- Add the Foreign key contraints to each of the foreign key references
