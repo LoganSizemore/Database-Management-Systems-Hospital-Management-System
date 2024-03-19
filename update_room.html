@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Update Room</title>
+</head>
+<nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
+    <div class="container"><button onclick="window.location.href = 'index.html';">Home</button></div>
+</nav>
+<br><br>
+<body>
+    <div class="container">
+        <h1>Update Room</h1>
+        <form action="update_room.php" method="POST">
+            <label for="RoomID">RoomID:</label>
+            <input type="number" id="RoomID" name="RoomID"><br><br>
+
+            <!-- can be used to create a dropdown pulling rooms from room table -->
+            <!-- <select>
+                <?php
+                    include('connect.php');
+                    $rooms = mysqli_query($con, "select RoomID from Room");
+                    while($r = mysqli_fetch_array($rooms))
+                ?>
+                <option value="<?php echo $r ?>"></option>
+            </select> -->
+            
+
+            <label for="PatientID">PatientID:</label>
+            <input type="text" id="PatientID" name="PatientID"><br><br>
+            
+            <label for="StaffID">StaffID:</label>
+            <input type="text" id="StaffID" name="StaffID"><br><br>
+
+            <label for="AdmissionDate">Admission Date:</label>
+            <input type="datetime-local" id="AdmissionDate" name="v"><br><br>
+        
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
