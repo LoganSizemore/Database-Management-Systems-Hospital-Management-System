@@ -19,20 +19,16 @@
         die("Connection failed: " . $conn->connect_error);
     }
 
+    $RoomID = $_REQUEST["RoomID"];
     $PatientID = $_REQUEST["PatientID"];
-    $LastName = $_REQUEST["LastName"];
-    $Address = $_REQUEST["Address"];
-    $PhoneNumber = $_REQUEST["PhoneNumber"];
-    $insurance = $_REQUEST["insurance"];
-    $PharmacyID = $_REQUEST["PharmacyID"];
-    $Admitted = $_REQUEST["Admitted"];
-    $Released = $_REQUEST["Released"];
+    $StaffID = $_REQUEST["StaffID"];
+    $AdmissionDate = $_REQUEST["AdmissionDate"];
 
-    $sql = "UPDATE Patient Set PatientID = '$PatientID', Address = '$Address', PhoneNumber = '$PhoneNumber', insurance = '$insurance', PharmacyID = '$PharmacyID', Admitted = '$Admitted', Released = '$Released' where PatientID = '$PatientID'";
+    $sql = "UPDATE Room Set RoomId = '$RoomID', PatientID = '$PatientID', StaffID = '$StaffID', AdmissionDate = '$AdmissionDate' where RoomId = '$RoomID'";
     $result = $conn->query($sql);
 
     if ($conn->query($sql) === TRUE) {
-        echo "Patient record updated successfully";
+        echo "Room record updated successfully";
     } else {
         echo "Error: " . $sql->error;
     }
