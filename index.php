@@ -24,61 +24,75 @@
         
         <div class="row">
             <div class="col text-center">
-                <button class="button" onclick="window.location.href = 'add_patient.php';">Add Patient</button><br>
+                <button class="button" onclick="window.location.href = 'add/add_patient.php';">Add Patient</button><br>
             </div> 
             <div class="col text-center"> 
-                <button class="button" onclick="window.location.href = 'change_patient.php';">Update Patient</button><br>
+                <button class="button" onclick="window.location.href = 'update/change_patient.php';">Update Patient</button><br>
             </div>
             <div class="col text-center">
-                <button class="button" onclick="window.location.href = 'view_patient.php';">View Patients</button><br>
+                <button class="button" onclick="window.location.href = 'view/view_patient.php';">View Patients</button><br>
             </div> 
             <div class="col text-center">
-                <button class="button" onclick="window.location.href = 'remove_patient.php';">Remove Patient</button><br>
+                <button class="button" onclick="window.location.href = 'delete/remove_patient.php';">Remove Patient</button><br>
             </div> 
         </div>
 
         <div class="row">
             <div class="col text-center">
-                <button class="button" onclick="window.location.href = 'add_staff.php';">Add Staff</button><br>
+                <button class="button" onclick="window.location.href = 'add/add_staff.php';">Add Staff</button><br>
             </div> 
             <div class="col text-center"> 
-                <button class="button" onclick="window.location.href = 'change_room.php';">Update Room</button><br>
+                <button class="button" onclick="window.location.href = 'update/change_room.php';">Update Room</button><br>
             </div>
             <div class="col text-center">
-                <button class="button" onclick="window.location.href = 'view_room.php';">View Rooms</button><br>
+                <button class="button" onclick="window.location.href = 'view/view_room.php';">View Rooms</button><br>
             </div> 
             <div class="col text-center">
-                <button class="button" onclick="window.location.href = 'remove_room.php';">Remove room</button><br>
+                <button class="button" onclick="window.location.href = 'delete/remove_room.php';">Remove room</button><br>
             </div> 
         </div>
 
         <div class="row">
             <div class="col text-center">
-                <button class="button" onclick="window.location.href = 'add_appointment.php';">Add Appointment</button><br>
+                <button class="button" onclick="window.location.href = 'add/add_appointment.php';">Add Appointment</button><br>
             </div> 
             <div class="col text-center"> 
                 <!-- <button class="button" onclick="window.location.href = 'update_patient.php';">Update Staff</button><br> -->
             </div>
             <div class="col text-center">
-                <button class="button" onclick="window.location.href = 'view_dotcor.php';">View Doctors</button><br>
+                <button class="button" onclick="window.location.href = 'view/view_doctor.php';">View Doctors</button><br>
             </div> 
             <div class="col text-center">
-                <button class="button" onclick="window.location.href = 'remove_patient.php';">Remove Patient</button><br>
+                <button class="button" onclick="window.location.href = 'delete/remove_appointment.php';">Remove Appointment</button><br>
             </div> 
         </div>
 
         <div class="row">
             <div class="col text-center">
-                <button class="button" onclick="window.location.href = 'add_prescription.php';">Add Prescription</button><br>
+                <button class="button" onclick="window.location.href = 'add/add_prescription.php';">Add Prescription</button><br>
             </div> 
             <div class="col text-center"> 
                 <!-- <button class="button" onclick="window.location.href = 'update_patient.php';">Update Staff</button><br> -->
             </div>
             <div class="col text-center">
-                <button class="button" onclick="window.location.href = 'view_pharmacies.php';">View Pharmacies</button><br>
+                <button class="button" onclick="window.location.href = 'view/view_pharmacies.php';">View Pharmacies</button><br>
             </div> 
             <div class="col text-center">
-                <button class="button" onclick="window.location.href = 'remove_prescription.php';">Remove Prescription</button><br>
+                <button class="button" onclick="window.location.href = 'delete/remove_prescription.php';">Remove Prescription</button><br>
+            </div> 
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <button class="button" onclick="window.location.href = 'add/add_room.php';">Add Room</button><br>
+            </div> 
+            <div class="col text-center"> 
+                <!-- <button class="button" onclick="window.location.href = 'update_patient.php';">Update Staff</button><br> -->
+            </div>
+            <div class="col text-center">
+                <!-- <button class="button" onclick="window.location.href = 'view_pharmacies.php';">View Pharmacies</button><br> -->
+            </div> 
+            <div class="col text-center">
+                <!-- <button class="button" onclick="window.location.href = 'remove_prescription.php';">Remove Prescription</button><br> -->
             </div> 
         </div>
 
@@ -99,6 +113,7 @@
                     <li><a href = "add_staff.php">Add staff</a></li>
                     <li><a href = "add_appointment.php">Add Appointment</a></li>
                     <li><a href = "add_prescription.php">Add prescription</a></li>
+                    <li><a href = "add_room.php">Add Room</a></li>
                 </ul>
             </div>
             <div class="col section">
