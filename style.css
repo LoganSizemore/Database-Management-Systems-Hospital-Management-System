@@ -15,7 +15,8 @@ button:hover{
     color: red;
 }
 
-li{
+ul{
     list-style-type: none;
-    padding-left: 100px !important;
+    padding-left: 95px !important;
 }
+
