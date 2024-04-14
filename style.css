@@ -16,5 +16,6 @@ button:hover{
 }
 
 li{
+    list-style-type: none;
     padding-left: 100px !important;
 }

@@ -16,5 +16,6 @@ button:hover{
 }
 
 li{
-    padding-left: 100px !important;
+    list-style-type: none;
+    padding-left: 95px !important;
 }
