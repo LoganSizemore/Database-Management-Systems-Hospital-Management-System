@@ -122,7 +122,7 @@
         <div class="row">
             <div class="col section ">
                 <h5 class="text-center">Add</h5>
-                <ul class="">
+                <ul class = "text-center">
                     <li><a href = "add/add_patient.php">Add patient</a></li>
                     <li><a href = "add/add_staff.php">Add staff</a></li>
                     <li><a href = "add/add_appointment.php">Add Appointment</a></li>
@@ -133,14 +133,14 @@
             </div>
             <div class="col section">
                 <h5 class="text-center">Update</h5>
-                <ul>
+                <ul class = "text-center">
                     <li><a href="update/change_patient.php">Update Patient</a></li>
                     <li><a href="update/change_room.php">Update Room</a></li>
                 </ul>
             </div>
             <div class="col section">
                 <h5 class="text-center">View</h5>
-                <ul>
+                <ul class = "text-center">
                     <li><a href="view/view_patient.php">View Patients</a></li>
                     <li><a href="view/view_room.php">View Rooms</a></li>
                     <li><a href="view/view_doctor.php">View Doctors</a></li>
@@ -149,7 +149,7 @@
             </div>
             <div class="col section">
                 <h5 class="text-center">Delete</h5>
-                <ul>
+                <ul class = "text-center">
                     <li><a href="delete/remove_patient.php">Remove Patient</a></li>
                     <li><a href="delete/remove_room.php">Remove Room</a></li>
                     <li><a href="delete/remove_appointment.php">Remove Appointment</a></li>
