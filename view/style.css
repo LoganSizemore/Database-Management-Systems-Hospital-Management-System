@@ -17,5 +17,6 @@ button:hover{
 
 ul{
     list-style-type: none;
+    padding-left: 95px !important;
 }
 

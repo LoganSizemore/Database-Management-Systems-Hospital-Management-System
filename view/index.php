@@ -122,7 +122,7 @@
         <div class="row">
             <div class="col section ">
                 <h5 class="text-center">Add</h5>
-                <ul class = "text-center">
+                <ul class="text-center">
                     <li><a href = "add/add_patient.php">Add patient</a></li>
                     <li><a href = "add/add_staff.php">Add staff</a></li>
                     <li><a href = "add/add_appointment.php">Add Appointment</a></li>
